@@ -18,7 +18,7 @@ function useDocumentVisibility() {
     return () => {
       window.removeEventListener('visibilitychange', handleVisChange);
     };
-  });
+  }, []);
 
   return documentVisibility;
 }
