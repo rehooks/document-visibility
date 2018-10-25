@@ -1,4 +1,4 @@
-# `document-visibility-hook`
+# `@rehooks/document-visibility-hook`
 
 > React hook for subscribing to document visibility
 
