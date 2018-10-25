@@ -3,11 +3,11 @@
 let { useState, useEffect } = require('react');
 
 function getVisibility() {
-  return document.visibilityState === 'visible'
+  return document.visibilityState;
 }
 
 function useDocumentVisibility() {
-  let [documentVis, setDocumentVis] = useState(getVisibility());
+  let [documentVisibility, setDocumentVisibility] = useState(getVisibility());
 
   function handleVisChange() {
     setDocumentVis(getVisibility());
@@ -20,7 +20,7 @@ function useDocumentVisibility() {
     };
   });
 
-  return documentVis;
+  return documentVisibility;
 }
 
 module.exports = useDocumentVisibility;

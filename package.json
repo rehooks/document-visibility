@@ -1,9 +1,9 @@
 {
-  "name": "@rehooks/document-visibility-hook",
+  "name": "@rehooks/document-visibility",
   "version": "1.0.0",
   "description": "React hook for subscribing to document visibility",
   "main": "index.js",
-  "repository": "https://github.com/hanford/document-visibility-hook",
+  "repository": "https://github.com/rehooks/document-visibility",
   "author": "Jack Hanford <jackhanford@gmail.com>",
   "license": "MIT",
   "publishConfig": {

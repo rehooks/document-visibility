@@ -1,11 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import useDocumentVis from './';
+import useDocumentVisibility from './';
 
 function App() {
-  let documentVisible = useDocumentVis();
-  console.log(documentVisible)
-  return <pre>{JSON.stringify(documentVisible)}</pre>;
+  let documentVisibility = useDocumentVisibility();
+  return <p>{documentVisibility}</p>;
 }
 
 render(<App />, window.root);

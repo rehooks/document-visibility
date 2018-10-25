@@ -2,7 +2,7 @@
 let test = require('ava');
 let { createElement: h } = require('react');
 let ReactTestRenderer = require('react-test-renderer');
-let useWindowSize = require('./');
+let useDocumentVisibility = require('./');
 
 function render(val) {
   return ReactTestRenderer.create(val).toJSON();
@@ -10,8 +10,8 @@ function render(val) {
 
 test(t => {
   function Component() {
-    return JSON.stringify(useWindowSize());
+    return useDocumentVisibility();
   }
 
-  t.is(render(h(Component)), JSON.stringify(document.visibilityState === 'visible'));
+  t.is(render(h(Component)), 'prerender');
 });

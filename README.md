@@ -1,4 +1,4 @@
-# `@rehooks/document-visibility-hook`
+# `@rehooks/document-visibility`
 
 > React hook for subscribing to document visibility
 
@@ -10,17 +10,17 @@
 ## Install
 
 ```sh
-yarn add document-visibility-hook
+yarn add @rehooks/document-visibility
 ```
 
 ## Usage
 
 ```js
-import useDocumentVisibility from 'document-visibility-hook';
+import useDocumentVisibility from '@rehooks/document-visibility';
 
 function MyComponent() {
-  let visible = useDocumentVisibility();
-  // true || false
+  let documentVisibility = useDocumentVisibility();
+  // documentVisibility = "hidden" | "visible" | "prerender"
 
   // ...
 }
