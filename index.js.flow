@@ -1,8 +1,5 @@
-interface WindowSize {
-  innerHeight: number,
-  innerWidth: number,
-  outerHeight: number,
-  outerWidth: number,
+interface DocumentVisibility {
+  visible: boolean,
 }
 
-declare export default function useWindowSize(): WindowSize;
+declare export default function useDocumentVisibility(): DocumentVisibility;
