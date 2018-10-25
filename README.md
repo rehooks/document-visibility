@@ -19,10 +19,8 @@ yarn add document-visibility-hook
 import useDocumentVisibility from 'document-visibility-hook';
 
 function MyComponent() {
-  let documentvisibility = useDocumentVisibility();
-  // {
-  //   visible: true,
-  // }
+  let visible = useDocumentVisibility();
+  // true || false
 
   // ...
 }

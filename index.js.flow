@@ -1,5 +1,1 @@
-interface DocumentVisibility {
-  visible: boolean,
-}
-
-declare export default function useDocumentVisibility(): DocumentVisibility;
+declare export default function useDocumentVisibility(): boolean;

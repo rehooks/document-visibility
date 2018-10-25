@@ -13,7 +13,5 @@ test(t => {
     return JSON.stringify(useWindowSize());
   }
 
-  t.is(render(h(Component)), JSON.stringify({
-    visible: document.visibilityState === 'visible',
-  }));
+  t.is(render(h(Component)), JSON.stringify(document.visibilityState === 'visible'));
 });

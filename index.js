@@ -3,9 +3,7 @@
 let { useState, useEffect } = require('react');
 
 function getVisibility() {
-  return {
-    visible: document.visibilityState === 'visible'
-  }
+  return document.visibilityState === 'visible'
 }
 
 function useDocumentVisibility() {
