@@ -1,6 +1,6 @@
 {
   "name": "document-visibility-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook for subscribing to document visibility",
   "main": "index.js",
   "repository": "https://github.com/hanford/document-visibility-hook",
