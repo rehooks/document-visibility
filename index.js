@@ -9,14 +9,14 @@ function getVisibility() {
 function useDocumentVisibility() {
   let [documentVisibility, setDocumentVisibility] = useState(getVisibility());
 
-  function handleVisChange() {
+  function handleVisibilityChange() {
     setDocumentVisibility(getVisibility());
   }
 
   useEffect(() => {
-    window.addEventListener('visibilitychange', handleVisChange);
+    window.addEventListener('visibilitychange', handleVisibilityChange);
     return () => {
-      window.removeEventListener('visibilitychange', handleVisChange);
+      window.removeEventListener('visibilitychange', handleVisibilityChange);
     };
   }, []);
 
