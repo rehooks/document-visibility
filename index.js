@@ -10,7 +10,7 @@ function useDocumentVisibility() {
   let [documentVisibility, setDocumentVisibility] = useState(getVisibility());
 
   function handleVisChange() {
-    setDocumentVis(getVisibility());
+    setDocumentVisibility(getVisibility());
   }
 
   useEffect(() => {
