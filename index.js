@@ -3,6 +3,7 @@
 let { useState, useEffect } = require('react');
 
 function getVisibility() {
+  if (typeof document === "undefined") return true;
   return document.visibilityState;
 }
 
